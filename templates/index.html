@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fake News Detection</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <h1>Fake News Detection</h1>
+    <form action="/predict" method="post">
+      <label for="text">Text:</label>
+      <textarea id="text" name="text"></textarea>
+      <br><br>
+      
+      <label for="model">Model:</label>
+      <select name="model" id="model">
+        <option value="Logistic Regression">Logistic Regression</option>
+        <option value="SVM">SVM</option>
+        <option value="Random Forest">Random Forest</option>
+        <option value="Bagging">Bagging</option>
+        <option value="Soft Voting">Soft Voting</option>
+        <option value="Bayes">Bayes</option>
+        <option value="LSTM">LSTM</option>
+        <option value="CNN">CNN</option>
+        <option value="Attention">Attention</option>
+        <option value="BiLSTM">BiLSTM</option>
+        <option value="BiLSTM CNN">BiLSTM CNN</option>
+        <option value="GRU">GRU</option>
+        <option value="BiLSTM CNN Attention">BiLSTM CNN Attention</option>
+        <option value="BiLSTM Attention">BiLSTM Attention</option>
+      </select>
+      <br><br>
+      <button id="clearButton" type="button">Clear</button>
+      <br><br>
+
+      
+      <input type="submit" value="Predict">
+    </form>
+    <p id="result"></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
