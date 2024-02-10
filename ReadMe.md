@@ -4,21 +4,21 @@ This project is a machine learning-based approach to detect fake news using the 
 
 ## Project Structure
 
-- [`app.py`]: This is the main application file where the machine learning models are trained and tested. It includes models like [`modelAttention`], [`modelBiA`], [`modelBiLSTM`], [`modelBiLSTMCNNa`], [`modelBiLSTM_CNN`], [`modelCNN`], and [`modelGru`].
+- `app.py`: This is the main application file where the machine learning models are trained and tested. It includes models like `modelAttention`, `modelBiA`, `modelBiLSTM`, `modelBiLSTMCNNa`, `modelBiLSTM_CNN`, `modelCNN`, and `modelGru`.
 
-- [`web.py`]: This file is used for the web interface of the application.
+- `web.py`: This file is used for the web interface of the application.
 
-- [`Demonstration.ipynb`]: This Jupyter notebook contains a demonstration of how the models are trained and tested.
+- `Demonstration.ipynb`: This Jupyter notebook contains a demonstration of how the models are trained and tested.
 
-- [`datasets/`]: This directory contains the datasets used for training and testing the models. It includes `Fake.csv`, `True.csv`, and `Preprocessed_data.csv`.
+- `datasets/`: This directory contains the datasets used for training and testing the models. It includes `Fake.csv`, `True.csv`, and `Preprocessed_data.csv`.
 
-- [`models/`]: This directory contains the trained models which are saved for future use. It includes models like `Attention.h5`, `BiA.h5`, `BiLSTM.h5`, `BiLSTMCNN.h5`, `CNN.h5`, `doc2vec.model`, `GRU.h5`, `LSTM.h5`, and others.
+- `models/`: This directory contains the trained models which are saved for future use. It includes models like `Attention.h5`, `BiA.h5`, `BiLSTM.h5`, `BiLSTMCNN.h5`, `CNN.h5`, `doc2vec.model`, `GRU.h5`, `LSTM.h5`, and others.
 
-- [`templates/`]: This directory contains the HTML templates used for the web interface. It includes `index.html`.
+- `templates/`: This directory contains the HTML templates used for the web interface. It includes `index.html`.
 
 ## How to Run
 
-To run the project, you need to execute the [`app.py`] or [`web.py`] file. Make sure you have all the necessary Python libraries installed.
+To run the project, you need to execute the `app.py` or `web.py` file. Make sure you have all the necessary Python libraries installed.
 
 ```sh
 python app.py
